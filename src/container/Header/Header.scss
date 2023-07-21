@@ -1,0 +1,111 @@
+.app__header{
+    flex:1;
+    width:100%;
+    height:100%;
+    flex-direction: row;
+    padding: 10rem 2rem 0;
+
+    @media screen and (min-width:2000px){
+        padding-top: 8rem;
+    }
+
+    @media screen and (max-width:1200px){
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:450px){
+        padding: 6rem 1rem 2rem;
+    }
+}
+
+.app__header-info{
+    flex:0.65;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    height:100%;
+
+    @media screen and (max-width: 2000px){
+        width:100%;
+        margin-right:0rem
+    }
+    @media screen and (max-width: 450px){
+        width:100%;
+        margin-top: 20px;
+        margin-right:0rem
+    }
+}
+
+.app__header-badge{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .badge-cmp{
+        padding: 1rem 2rem;
+        border: white;
+        border-radius: 15px;
+        flex-direction: row;
+        width:auto;
+
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        @media screen and (max-width:450px){
+            h1{
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+.app__header-img{
+    flex:1;
+    height:100%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    img{
+        width:80%;
+        object-fit: contain;
+        z-index: 1;
+        @media screen and (min-width:450px){
+            width:100%;
+        }
+        @media screen and (min-width:1000px){
+            width:80%;
+        }
+    }
+}
+
+.btn_download{
+    margin-top:70px;
+    margin-bottom:50px;
+    padding:15px;
+    font-size:20px;
+    border-radius:10px;
+    background-color:#7371EE;
+    color:white;
+    border: 1px solid #7371EE;
+    cursor:pointer;
+
+    &:hover{
+        background:none;
+        color:#7371EE;
+    }
+}
+
+.header_p{
+    margin-top:50px;
+    @media screen and (max-width:2000px){
+    }
+
+    @media screen and (min-width:1200px){
+    }
+   
+}
